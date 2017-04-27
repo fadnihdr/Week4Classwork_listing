@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="2"
+    android:rowCount="3"
+    android:useDefaultMargins="true"
+    tools:context="com.example.fadni.week4class.addItem">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:text="Item:" />
+
+    <EditText
+        android:id="@+id/nameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="5"
+        android:layout_rowWeight="1"
+        android:gravity="center"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:text="Description:" />
+
+    <EditText
+        android:id="@+id/descInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="5"
+        android:layout_rowWeight="1"
+        android:gravity="center"
+        android:inputType="text" />
+
+
+    <Button
+        android:layout_columnSpan="2"
+        android:layout_columnWeight="2"
+        android:layout_rowWeight="1"
+        android:onClick="addItem"
+        android:text="ADD" />
+
+</GridLayout>
